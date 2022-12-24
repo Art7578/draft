@@ -57,6 +57,9 @@
     transition: transform 250ms ease-in-out;
   }
   
+  .menu-avatar{
+    border-radius: 98px;
+  }
   .menu-container.is-open {
     transform: translateX(0);
   }
@@ -90,7 +93,7 @@
   font-weight: 700;
   font-size: 32px;
   line-height: 39px;
-  display: flex;
+  display: inline;
   align-items: center;
   text-align: center;
   color: #FCFCFC;

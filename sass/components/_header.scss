@@ -9,6 +9,10 @@
         margin-left: auto;
     }
 
+    @media screen and (min-width: 1200px){
+        padding-top: 0px;
+    }
+
 }
 .header_container{
     display: flex;
