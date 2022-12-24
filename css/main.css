@@ -106,7 +106,6 @@ p {
 }
 
 .menu-icon {
-  fill: #212121;
   -webkit-transition-property: fill;
   transition-property: fill;
   -webkit-transition-duration: 250ms;
@@ -116,20 +115,6 @@ p {
 }
 .menu-icon:hover {
   fill: #F8D24E;
-}
-
-.menu-icon_main {
-  fill: #212121;
-  margin-right: 23px;
-  -webkit-transition-property: fill;
-  transition-property: fill;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.menu-icon_main:hover {
-  fill: var(--secondary-color);
 }
 
 .nav__list {
@@ -261,6 +246,10 @@ p {
 .button:hover {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.arrow-icon {
+  margin-left: 4px;
 }
 
 .backdrop {
@@ -801,4 +790,4 @@ p {
   .menu-icon {
     margin-right: 32px;
   }
-}
+}/*# sourceMappingURL=main.css.map */
