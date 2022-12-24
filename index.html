@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Seymour+One&display=swap" 
+          rel="stylesheet">
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" 
+          integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="container header_container">
+            <svg class="ice-crema-icon" width="48" height="44">
+                <use href="./images/icons.svg#icon-ice-crema"></use>
+            </svg>
+            <nav class="nav">
+                <ul class="list nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link link" href="">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link link" href="./portfolio.html">How it’s made?</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link link" href="">Our products</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link link" href="">Contact</a>
+                    </li>
+                </ul>
+            </nav>  
+        <div class="menu">
+
+            <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            >
+            <svg class="menu-icon" width="32" height="32">
+            <use href="./images/icons.svg#icon-menu-burger"></use>
+            </svg>
+            </button>
+            <div class="header__button">
+                <button class="button" data-modal-open>Buy now</button>
+            </div> 
+        </div>    
+    </header>
+    <!-- Modal -->
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <button class="modal-btn" data-modal-close>
+                            <svg class="modal-icon" width="18" height="18">
+                              <use href="./images/icons.svg#icon-cloce-black"></use>
+                            </svg>
+                        </button>
+                        <strong class="modal-label">Buy now</strong>
+                        <div class="modal-menu">
+                            <div class="modal_ice-creem">
+                                <div class="modal_ice-creem-circle">
+                                    <img
+                                        class="menu-avatar"
+                                        srcset="images\bye_now\kelsey-curtis-G5ZenftPPOA-unsplash 2@1x.jpg 1x, images\bye_now\kelsey-curtis-G5ZenftPPOA-unsplash 2@2x.jpg 2x"
+                                        src="./images/bye_now/kelsey-curtis-G5ZenftPPOA-unsplash 2@1x.jpg"
+                                        alt="ice-creem"
+                                        width="132"
+                                        height="132"
+                                        loading="lazy"
+                                        />
+                                </div>
+                                <p class="modal_ice-creem-text">ice cream</p>
+                            </div>
+                            <div class="modal_ice-coffee">
+                                <div class="modal_ice-coffee-circle">
+                                    <img
+                                        class="menu-avatar"
+                                        srcset="images\bye_now\pariwat-pannium-0_qbeF_0zn8-unsplash 1@1x.jpg 1x, images\bye_now\pariwat-pannium-0_qbeF_0zn8-unsplash 1@2x.jpg 2x"
+                                        src="./images/bye_now/pariwat-pannium-0_qbeF_0zn8-unsplash 1@1x.jpg"
+                                        alt="ice-creem"
+                                        width="132"
+                                        height="132"
+                                        loading="lazy"
+                                        />
+                                </div>
+                                <p class="modal_ice-coffee-text">ice coffee</p>
+                            </div>
+                            <div class="modal_milkshake">
+                                <div class="modal_milkshake-circle">
+                                    <img
+                                        class="menu-avatar"
+                                        srcset="images\bye_now\victor-rutka-4FujjkcI40g-unsplash 1@1x.jpg 1x, images\bye_now\victor-rutka-4FujjkcI40g-unsplash 1@2x.jpg 2x"
+                                        src="./images/bye_now/victor-rutka-4FujjkcI40g-unsplash 1@1x.jpg"
+                                        alt="ice-creem"
+                                        width="132"
+                                        height="132"
+                                        loading="lazy"
+                                        />
+                                </div>
+                                <p class="modal_ice-milkshake-text">milkshake</p>
+                            </div>
+                        </div>
+                        <form class="modal-form" name="modal_form">
+                          <div class="modal-form-group" role="group">
+                                <div class="modal-form-wrapper">
+                                    <input
+                                        class="modal-form-field"
+                                        type="text"
+                                        name="user_name"
+                                        id="user_name"
+                                        minlength="3"
+                                        required
+                                        placeholder="Name"
+                                    />
+                                </div>
+                                <div class="modal-form-wrapper">
+                                    <input class="modal-form-field" 
+                                        type="tel" 
+                                        name="user_phone"
+                                            id="user_phone" 
+                                            minlength="3"
+                                            required
+                                            placeholder="Phone"
+                                    />
+                                </div>
+                                <textarea
+                                class="modal-form-message"
+                                name="user_message"
+                                id="user_message"
+                                rows="6"
+                                placeholder="Comment"
+                                ></textarea>
+                          </div>
+                          <button class="modal-form-btn button" type="submit">Submit</button>
+                        </form>
+                      </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <svg class="ice-crema-icon" width="48" height="44">
+            <use href="./images/icons.svg#icon-ice-crema"></use>
+        </svg>
+        <button class="menu-toggle js-close-menu">
+            <svg class="menu-icon" width="32" height="32">
+                <use href="./images/icons.svg#icon-close-white"></use>
+                </svg>
+        </button>
+  
+        <ul class="mobile-menu">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="">
+                <p>
+                    Home
+                </p>
+              </a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="">
+                <p>
+                    How it’s made?
+                </p>
+            </a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="">
+                <p>
+                    Our products
+                </p>
+            </a>
+            </li>
+            <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="">
+                    <p>
+                        Contact
+                    </p>
+                </a>
+              </li>
+          </ul>
+    
+          <div class="mobile__button">
+            <button class="button" data-modal-open>Buy now</button>
+        </div> 
+    </div>
+    <script src="./js/modal.js"></script>
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+  <script defer src="./js/mobile-menu.js"></script>
+</body>
+</html>

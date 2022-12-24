@@ -1,0 +1,130 @@
+
+  
+  .menu .link {
+    padding: 10px;
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .menu .link:hover,
+  .menu .link:focus {
+    text-decoration: underline;
+  }
+  
+  .menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 0;
+    background-color: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    margin-left: auto;
+    
+
+  @media (min-width: 768px){
+    margin-left: 440px;
+  }
+  @media (min-width: 1200px){
+    display: none;
+  }
+       
+  .menu-toggle:hover,
+  .menu-toggle:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+  
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+  
+    display: flex;
+    flex-direction: column;
+  
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background: #84A178;
+    z-index: 999;
+  
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+  }
+  
+  .menu-container.is-open {
+    transform: translateX(0);
+  }
+  
+  .menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #fff;
+  }
+  
+  .mobile-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .mobile-menu .link {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+.mobile-menu-link{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FCFCFC;
+  list-style: none;
+  text-decoration: none;
+
+  &:hover{
+    color: #131313;
+  }
+}  
+.mobile-menu-item:not(:last-child){
+    margin-bottom: 32px;
+}
+
+.mobile-menu-link.current {
+    color: var(--secondary-color);
+  }
+.mobile__button{
+  margin-top: 110px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 768px){
+      display: none;
+    }  
+}
+.menu-icon{
+  fill: #FFFFFF;
+  display: flex;
+  align-items: baseline;
+
+  @media (min-width: 768px){
+    margin-right: 32px;
+  }
+}
