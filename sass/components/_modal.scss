@@ -33,7 +33,7 @@
         width: 280px;
       }  
 
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 768px) {
         width: 528px;
       }
 }
@@ -83,12 +83,12 @@
 }
 .modal-menu{
     margin-top: 87px;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
-    margin-left: auto;
-    margin-right: auto;
+    margin-right: 0;
     
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 768px){
         display: flex;
         gap: 32px;
     }
@@ -102,7 +102,7 @@
         filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
         border-radius: 15px;
 
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 768px){
         height: 135px;
         margin-bottom: 0;
     }
@@ -139,7 +139,7 @@
         box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
         border-radius: 15px;
 
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 768px){
         height: 135px;
        margin-bottom: 0;
     }
@@ -174,7 +174,7 @@
         filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
         border-radius: 15px;
     
-        @media screen and (min-width: 1200px){
+        @media screen and (min-width: 768px){
         height: 135px;
         margin-bottom: 0;
     }
@@ -200,12 +200,18 @@
         margin-top: 95px;
     }
 
+.menu-avatar{
+    position: absolute;
+    top: -10px;
+    border-radius: 98px;
+}    
+
 .modal-form-group {
 
     @media screen and (min-width: 480px){
         width: 224px;
     }
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 768px){
         width: 368px;
         margin-left: auto;
         margin-right: auto;
@@ -235,7 +241,7 @@
             outline-color: red;
         }
 
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 768px){
         width: 368px;
     }
 }
@@ -262,7 +268,7 @@
         padding-top: 11px;
     }
 
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 768px){
         width: 368px;
     }
 }
@@ -308,7 +314,7 @@
     letter-spacing: 0.03em;
     color: #757575;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
         line-height: 24px;
     }
 }
