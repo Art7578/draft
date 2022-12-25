@@ -109,6 +109,11 @@ p {
       -ms-flex-align: baseline;
           align-items: baseline;
 }
+@media screen and (min-width: 1200px) {
+  .ice-crema-icon {
+    margin-top: auto;
+  }
+}
 
 .menu-icon {
   -webkit-transition-property: fill;
@@ -400,7 +405,7 @@ p {
   width: 132px;
   height: 132px;
   border-radius: 50%;
-  bottom: 61px;
+  bottom: 70px;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(156, 190, 143, 0.7)), to(rgba(156, 190, 143, 0.7))), #D9D9D9;
   background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
   -webkit-box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
@@ -719,7 +724,18 @@ p {
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
 }
 
+.menu-pretty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
 .menu-avatar {
+  position: absolute;
+  top: -10px;
   border-radius: 98px;
 }
 

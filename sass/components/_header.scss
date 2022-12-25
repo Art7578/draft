@@ -25,6 +25,10 @@
     fill: #F8D24E;
     display: flex;
     align-items: baseline;
+
+    @media screen and (min-width: 1200px){
+        margin-top: auto;
+    }
 }
 .menu-icon{
     transition-property: fill;
