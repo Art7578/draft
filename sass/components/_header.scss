@@ -102,11 +102,15 @@
 .menu{
     display: flex;
     align-items: center;
-    margin-left: auto;
+    justify-content: flex-end;
+
+    @media (min-width: 480px){
+        margin-left: auto;
+      }
 }
 .header__button{
   display: none;
-  
+
     @media screen and (min-width: 768px) {
       display: flex;
       margin-left: auto;

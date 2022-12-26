@@ -205,7 +205,14 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: auto;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+@media (min-width: 480px) {
+  .menu {
+    margin-left: auto;
+  }
 }
 
 .header__button {
@@ -271,6 +278,7 @@ p {
   background: rgba(0, 0, 0, 0.2);
   -webkit-transition: opacity var(--animation), visibility var(--animation);
   transition: opacity var(--animation), visibility var(--animation);
+  z-index: 1000;
 }
 
 .backdrop.is-hidden {
@@ -285,7 +293,7 @@ p {
   left: 50%;
   width: 100%;
   padding: 28px;
-  background: var(--white-color);
+  background: #FCFCFC;
   border: 2px solid #F8D24E;
   border-radius: 10px;
   -webkit-transform: translate(-50%, -50%) scale(1);
@@ -324,8 +332,8 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   height: 30px;
-  background: var(--white-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #FCFCFC;
+  border: 1px solid #FCFCFC;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -366,6 +374,10 @@ p {
 
 .modal-menu {
   margin-top: 87px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -392,6 +404,11 @@ p {
   -webkit-filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
           filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
   border-radius: 15px;
+  -webkit-transition: background var(--animation);
+  transition: background var(--animation);
+}
+.modal_ice-creem:hover {
+  background: #96AF8C;
 }
 @media screen and (min-width: 768px) {
   .modal_ice-creem {
@@ -429,11 +446,15 @@ p {
   width: 132px;
   height: 136px;
   margin-bottom: 20px;
-  background: #EFD478;
   border: 2px solid #EFD478;
   -webkit-box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
           box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
   border-radius: 15px;
+  -webkit-transition: background var(--animation);
+  transition: background var(--animation);
+}
+.modal_ice-coffee:hover {
+  background: #EFD478;
 }
 @media screen and (min-width: 768px) {
   .modal_ice-coffee {
@@ -474,6 +495,11 @@ p {
   -webkit-filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
           filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
   border-radius: 15px;
+  -webkit-transition: background var(--animation);
+  transition: background var(--animation);
+}
+.modal_milkshake:hover {
+  background: #D6936D;
 }
 @media screen and (min-width: 768px) {
   .modal_milkshake {
@@ -512,6 +538,9 @@ p {
   border-radius: 98px;
 }
 
+.modal-form-group {
+  width: 100%;
+}
 @media screen and (min-width: 480px) {
   .modal-form-group {
     width: 224px;
@@ -528,11 +557,16 @@ p {
 .modal-form-wrapper {
   position: relative;
   margin-bottom: 12px;
-  width: 224px;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .modal-form-wrapper {
+    width: 224px;
+  }
 }
 
 .modal-form-field {
-  width: 224px;
+  width: 100%;
   height: 32px;
   margin-left: auto;
   margin-right: auto;
@@ -545,6 +579,11 @@ p {
 }
 .modal-form-field:invalid {
   outline-color: red;
+}
+@media screen and (min-width: 480px) {
+  .modal-form-field {
+    width: 224px;
+  }
 }
 @media screen and (min-width: 768px) {
   .modal-form-field {
@@ -566,15 +605,18 @@ p {
   fill: var(--secondary-color);
 }
 
+.modal-form-message {
+  width: 100%;
+  height: 84px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84A178;
+  border-radius: 10px;
+  padding-left: 16px;
+  padding-top: 11px;
+}
 @media screen and (min-width: 480px) {
   .modal-form-message {
     width: 224px;
-    height: 84px;
-    background: rgba(248, 210, 78, 0.1);
-    border: 1px solid #84A178;
-    border-radius: 10px;
-    padding-left: 16px;
-    padding-top: 11px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -731,6 +773,7 @@ p {
 }
 
 .menu-pretty {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -818,4 +861,15 @@ p {
   .menu-icon {
     margin-right: 32px;
   }
+}
+
+.ice-crema-mobile-icon {
+  position: absolute;
+  fill: #F8D24E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }/*# sourceMappingURL=main.css.map */

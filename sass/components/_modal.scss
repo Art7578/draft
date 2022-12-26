@@ -8,7 +8,9 @@
     z-index: 1;
     background: rgba(0, 0, 0, 0.2);
     transition: opacity var(--animation),
-                visibility var(--animation);                 
+                visibility var(--animation);   
+                
+    z-index: 1000;
 }
 .backdrop.is-hidden{
     opacity: 0;
@@ -21,7 +23,7 @@
     left: 50%;
     width: 100%;
     padding: 28px;
-    background: var(--white-color);
+    background: #FCFCFC;
     border: 2px solid #F8D24E;
     border-radius: 10px;
     
@@ -48,8 +50,8 @@
     align-items: center;
     justify-content: center;
     height: 30px;
-    background: var(--white-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #FCFCFC;
+    border: 1px solid #FCFCFC;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -82,6 +84,8 @@
 }
 .modal-menu{
     margin-top: 87px;
+    justify-content: center;
+    gap: 80px;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -100,11 +104,16 @@
         border: 2px solid #96AF8C;
         filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
         border-radius: 15px;
+        transition: background var(--animation);
 
-    @media screen and (min-width: 768px){
-        height: 135px;
-        margin-bottom: 0;
-    }
+        &:hover{
+            background: #96AF8C;
+        }
+
+        @media screen and (min-width: 768px){
+            height: 135px;
+            margin-bottom: 0;
+        }
 }
 .modal_ice-creem-circle{
         position: absolute;
@@ -133,10 +142,14 @@
         width: 132px;
         height: 136px;
         margin-bottom: 20px;
-        background: #EFD478;
         border: 2px solid #EFD478;
         box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
         border-radius: 15px;
+        transition: background var(--animation);
+
+        &:hover{
+            background: #EFD478;
+        }
 
     @media screen and (min-width: 768px){
         height: 135px;
@@ -172,11 +185,16 @@
         border: 2px solid #D6936D;
         filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
         border-radius: 15px;
+        transition: background var(--animation);
+
+        &:hover{
+            background: #D6936D;
+        }
     
         @media screen and (min-width: 768px){
-        height: 135px;
-        margin-bottom: 0;
-    }
+            height: 135px;
+            margin-bottom: 0;
+        }
 }
 .modal_milkshake-circle{
         position: absolute;
@@ -206,6 +224,7 @@
 }    
 
 .modal-form-group {
+    width: 100%;
 
     @media screen and (min-width: 480px){
         width: 224px;
@@ -220,12 +239,16 @@
 .modal-form-wrapper {
     position: relative;
     margin-bottom: 12px;
-    width: 224px;
+    width: 100%;
+
+    @media screen and (min-width: 480px){
+        width:224px;    
+    }
 }
 .modal-form-field {
 
         
-        width: 224px;
+        width: 100%;
         height: 32px;
         margin-left: auto;
         margin-right: auto;
@@ -240,9 +263,13 @@
             outline-color: red;
         }
 
-    @media screen and (min-width: 768px){
-        width: 368px;
-    }
+        @media screen and (min-width: 480px){
+            width: 224px;
+        }
+
+        @media screen and (min-width: 768px){
+            width: 368px;
+        }
 }
 
 .modal-form-icon {
@@ -253,19 +280,23 @@
   
     transition: fill var(--animation);
 }
+
 .modal-form-field:focus + .modal-form-icon {
     fill: var(--secondary-color);
 }
 .modal-form-message {
-    @media screen and (min-width: 480px){
-        width: 224px;
+        width: 100%;
         height: 84px;
         background: rgba(248, 210, 78, 0.1);
         border: 1px solid #84A178;
         border-radius: 10px;
         padding-left: 16px;
         padding-top: 11px;
-    }
+
+        @media screen and (min-width: 480px){
+            width:224px;
+        }
+
 
     @media screen and (min-width: 768px){
         width: 368px;

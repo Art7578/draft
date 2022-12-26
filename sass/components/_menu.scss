@@ -57,6 +57,7 @@
   }
 
   .menu-pretty{
+    position: relative;
     display: flex;
     align-items: baseline;
   }
@@ -128,4 +129,11 @@
   @media (min-width: 768px){
     margin-right: 32px;
   }
+}
+
+.ice-crema-mobile-icon{
+  position: absolute;
+  fill: #F8D24E;
+  display: flex;
+  align-items: baseline;
 }
